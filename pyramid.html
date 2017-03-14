@@ -22,14 +22,20 @@
     </style>
 </head>
 <body>
-    <h1>Mario 4</h1>
+    <h1>Pyramid Slide</h1>
 
-    <p>When you say</p>
-    <p><strong>Draw a pyramid</strong></p>
-    <p>I say:</p>
-    <br>
+
 
     <form id="draw-form">
+        <label>
+            Brick Symbol:
+            <select id="brick" name="brick">
+                <option value="#">#</option>
+                <option value="@">@</option>
+                <option value="X">X</option>
+                <option value="$">$</option>
+            </select>
+        </label>
         <label>
             How high?
             <!--<input type="text" id="height"/>-->
@@ -37,10 +43,7 @@
             <span id="height-out" name="height-out"></span>
             <label class="error-message">
                 <!-- If there was a user error, we will put a message in here -->
-            </label>
         </label>
-        <br><br>
-        <input type="submit" value="Draw a pyramid"/>
     </form>
 
     <br><br>
